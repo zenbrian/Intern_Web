@@ -38,7 +38,7 @@ export default function App() {
         {/* 工作內容 */}
         <section id="section-work" className="xp-section" data-aos="fade-up">
           <div className="xp-section-inner">
-            <Window title="工作內容" width={1000} defaultCollapsed={false}>
+            <Window title="工作內容" width={1000}>
               <div className="window-content-scroll">
                 <SectionContent section="work" />
               </div>
@@ -49,7 +49,7 @@ export default function App() {
         {/* 學習 */}
         <section id="section-learn" className="xp-section" data-aos="fade-up">
           <div className="xp-section-inner">
-            <Window title="學習" width={1000} defaultCollapsed={false}>
+            <Window title="學習" width={1000} >
               <div className="window-content-scroll">
                 <SectionContent section="learn" />
               </div>
@@ -60,7 +60,7 @@ export default function App() {
         {/* 自我評估與心得感想 */}
         <section id="section-self" className="xp-section" data-aos="fade-up">
           <div className="xp-section-inner">
-            <Window title="自我評估及心得感想" width={1000} defaultCollapsed={false}>
+            <Window title="自我評估及心得感想" width={1000}>
               <div className="window-content-scroll">
                 <SectionContent section="self" />
               </div>

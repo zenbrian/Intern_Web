@@ -2,7 +2,6 @@ import { useEffect, useState, type PropsWithChildren } from 'react'
 
 type WindowProps = PropsWithChildren<{
   title: string
-  defaultCollapsed?: boolean
   width?: number
   onClose?: () => void
 }>
@@ -15,7 +14,6 @@ type WindowProps = PropsWithChildren<{
  */
 export default function Window({
   title,
-  defaultCollapsed = false,
   width = 1000,
   onClose,
   children,
@@ -61,7 +59,7 @@ export default function Window({
         </div>
       </div>
       <div className="window-body" style={{ padding: 0 }}>
-        {!collapsed && children}
+        {children}
       </div>
     </div>
   )
